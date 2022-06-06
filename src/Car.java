@@ -4,6 +4,13 @@ public class Car {
     int year = 2020;
     String color = "blue";
     double price = 50000.00;
+    String name;
+
+    Car(){}
+
+    Car(String name){
+        this.name = name;
+    }
 
     void drive(){
         System.out.println("You drive the car.");
@@ -11,5 +18,10 @@ public class Car {
 
     void brake(){
         System.out.println("You step on the brakes.");
+    }
+
+    public String toString(){
+
+        return make + "\n" + model + "\n" + color + "\n" + year;
     }
 }
